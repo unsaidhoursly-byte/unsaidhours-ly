@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — unsaidhours-ly</title>
+    <meta name="description"
+        content="Thoughts we never said out loud. Emotional blog posts on loneliness, healing, and mental health." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">unsaid<span>hours</span>-ly</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="connect.html">Connect</a>
+                <a href="community.html">Community</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="resources.html">Resources</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+        <h1 class="fade-in">Thoughts We Never Said Out Loud</h1>
+        <p class="fade-in">Words that sat heavy in our chests — finally given a place to breathe.</p>
+    </section>
+
+    <main>
+
+        <!-- Blog Cards -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="cards-grid">
+
+                    <!-- Blog Card 1 -->
+                    <div class="blog-card fade-in">
+                        <div class="blog-card-img">🌙</div>
+                        <div class="blog-card-body">
+                            <h3>Why Loneliness Hits Harder at Night</h3>
+                            <p>During the day, you're busy enough to forget. At night, the world goes quiet — but your
+                                thoughts don't. You replay conversations, overthink silences, and wonder if anyone is
+                                actually thinking about you too. Loneliness at night isn't just sadness — it's the
+                                awareness that everyone else seems to be asleep while you're wide awake in your own
+                                head.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 2 -->
+                    <div class="blog-card fade-in">
+                        <div class="blog-card-img">🧠</div>
+                        <div class="blog-card-body">
+                            <h3>You're Not Weak for Feeling Tired of Everything</h3>
+                            <p>No, you're not lazy. No, you're not ungrateful. You're just exhausted — emotionally,
+                                mentally, maybe even physically. The world tells you to hustle harder, smile bigger, be
+                                grateful. But sometimes your body and mind are screaming for rest. And resting is not
+                                giving up — it's surviving.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 3 -->
+                    <div class="blog-card fade-in">
+                        <div class="blog-card-img">🌿</div>
+                        <div class="blog-card-body">
+                            <h3>Healing Isn't Linear — And That's Okay</h3>
+                            <p>Some days you feel like you've got this. You wake up, you smile, you breathe easier. Then
+                                suddenly, without warning, it hits you again. That doesn't mean you've failed. Healing
+                                isn't a straight line — it's messy, it loops back, and it takes longer than anyone tells
+                                you. But you're still healing. Every single day.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Emotional Closing -->
+        <section class="glow-section fade-in">
+            <h2>Your Words Matter</h2>
+            <p style="color: var(--clr-text-dim); margin-top: 16px; font-size: 1rem;">Even the ones you've never spoken.
+                Especially those.</p>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="connect.html">Connect</a>
+            <a href="community.html">Community</a>
+            <a href="blog.html">Blog</a>
+            <a href="resources.html">Resources</a>
+        </div>
+        <p class="footer-glow">Mental Health Matters 💜</p>
+        <p>&copy; 2026 unsaidhours-ly. Built with empathy.</p>
+    </footer>
+
+    <button class="floating-bubble" id="floatingBubble">💜 You are not alone</button>
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle ambient music"
+        title="Toggle ambient music">🎵</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>unsaidhours-ly — You Don't Have to Carry It Alone</title>
+  <meta name="description" content="A safe, anonymous space where you can talk, share feelings, and connect with someone who understands. Because some hours feel heavier than others." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">unsaid<span>hours</span>-ly</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="connect.html">Connect</a>
+        <a href="community.html">Community</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content fade-in">
+      <h1>
+        <span class="typing-text" id="typingText"></span>
+      </h1>
+      <p>Some thoughts are hard to say out loud. This is a space where silence is understood.</p>
+      <div class="hero-buttons">
+        <a href="connect.html" class="btn btn-primary">💬 Talk to Someone</a>
+        <a href="about.html" class="btn btn-secondary">🌿 Explore the Space</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+
+    <!-- What is unsaidhours-ly? -->
+    <section class="section-pad" id="what-is">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>What is unsaidhours-ly?</h2>
+          <p>A safe, anonymous platform where you can express what you've been holding inside — without judgment, without fear.</p>
+        </div>
+        <div class="cards-grid">
+          <div class="card fade-in">
+            <span class="card-icon">🤫</span>
+            <h3>Anonymous & Safe</h3>
+            <p>No names, no photos. Just honest conversations between two people who need to be heard.</p>
+          </div>
+          <div class="card fade-in">
+            <span class="card-icon">🌙</span>
+            <h3>Always Open</h3>
+            <p>Loneliness doesn't follow a schedule. We're here whenever you need — especially at 2 AM.</p>
+          </div>
+          <div class="card fade-in">
+            <span class="card-icon">💜</span>
+            <h3>Mood-Based Matching</h3>
+            <p>We connect you with someone who understands exactly how you're feeling right now.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Loneliness Feels Louder at Night -->
+    <section class="section-pad" style="background: rgba(123, 47, 255, 0.03);">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Why Loneliness Feels Louder at Night</h2>
+          <p>When the world goes quiet, the noise inside gets louder. You deserve a voice in those hours.</p>
+        </div>
+        <div class="cards-grid" style="max-width: 800px; margin: 0 auto;">
+          <div class="card fade-in">
+            <span class="card-icon">🌌</span>
+            <h3>The Silence Amplifies</h3>
+            <p>During the day, distractions keep us busy. At night, there's nothing between you and your thoughts. That's when unsaidhours exist — the hours no one talks about.</p>
+          </div>
+          <div class="card fade-in">
+            <span class="card-icon">🕯️</span>
+            <h3>You're Not Alone in This</h3>
+            <p>Right now, someone else is staring at their ceiling, feeling the same weight. What if you could reach them? What if they could reach you?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mental Health Matters Glow Section -->
+    <section class="glow-section fade-in">
+      <h2>Mental Health Matters</h2>
+      <p style="color: var(--clr-text-dim); margin-top: 16px; font-size: 1rem;">Because some hours feel heavier than others.</p>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="connect.html">Connect</a>
+      <a href="community.html">Community</a>
+      <a href="blog.html">Blog</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <p class="footer-glow">Mental Health Matters 💜</p>
+    <p>&copy; 2026 unsaidhours-ly. Built with empathy.</p>
+  </footer>
+
+  <!-- Floating Bubble -->
+  <button class="floating-bubble" id="floatingBubble">💜 You are not alone</button>
+
+  <!-- Music Toggle -->
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle ambient music" title="Toggle ambient music">🎵</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

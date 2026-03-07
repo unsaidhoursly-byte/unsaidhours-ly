@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Voices — unsaidhours-ly</title>
+    <meta name="description" content="Read anonymous stories, testimonials, and shared feelings from our community." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">unsaid<span>hours</span>-ly</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="connect.html">Connect</a>
+                <a href="community.html" class="active">Community</a>
+                <a href="blog.html">Blog</a>
+                <a href="resources.html">Resources</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+        <h1 class="fade-in">You're not the only one feeling this.</h1>
+        <p class="fade-in">These are real feelings from real people — shared anonymously, felt universally.</p>
+    </section>
+
+    <main>
+
+        <!-- Anonymous Testimonials -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Anonymous Testimonials</h2>
+                    <p>Words from people who found comfort in this space.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="testimonial-card fade-in">
+                        <div class="quote-mark">"</div>
+                        <p>I was sitting alone at 3 AM, feeling like no one in the world understood me. Then I matched
+                            with someone who said exactly what I was thinking. I cried — but for the first time, they
+                            were good tears.</p>
+                        <span class="author">— Anonymous, 19</span>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="quote-mark">"</div>
+                        <p>I didn't want advice. I didn't want a lecture. I just wanted someone to say "I'm here." And
+                            that's exactly what happened. Thank you, unsaidhours.</p>
+                        <span class="author">— Anonymous, 22</span>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="quote-mark">"</div>
+                        <p>This platform reminded me that vulnerability isn't weakness. Telling a stranger how I really
+                            felt gave me more relief than pretending to be okay in front of people I know.</p>
+                        <span class="author">— Anonymous, 24</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emotional User Stories -->
+        <section class="section-pad" style="background: rgba(123, 47, 255, 0.03);">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Stories From the Unsaid Hours</h2>
+                    <p>Blog-style messages from people who chose to share their truth.</p>
+                </div>
+                <div class="cards-grid" style="max-width: 800px; margin: 0 auto;">
+                    <div class="card fade-in" style="grid-column: 1 / -1;">
+                        <span class="card-icon">🌙</span>
+                        <h3>The Night I Almost Gave Up</h3>
+                        <p>It was midnight. I had no one to call. I opened this app not expecting anything — just
+                            wanting someone to know I existed. A stranger said, "Hey, I'm glad you're here tonight."
+                            Five words. That's all it took to keep me holding on. I don't know who you were, but you
+                            saved me.</p>
+                    </div>
+                    <div class="card fade-in" style="grid-column: 1 / -1;">
+                        <span class="card-icon">🦋</span>
+                        <h3>Learning to Let Go</h3>
+                        <p>I carried so much anger at myself — for not being enough, for needing help, for not having it
+                            together. Talking to someone who felt the same way made me realize: we're all just doing our
+                            best. And that's enough. Some nights, survival is the achievement.</p>
+                    </div>
+                    <div class="card fade-in" style="grid-column: 1 / -1;">
+                        <span class="card-icon">🌻</span>
+                        <h3>From Stranger to Friend</h3>
+                        <p>We matched because we were both lonely. We talked for three hours about nothing and
+                            everything. Now, months later, they're one of my closest friends. We still check in on each
+                            other every night. All because we both chose to press "connect."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comment Section -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Share Your Feelings</h2>
+                    <p>Leave a message — anonymously. You never know who might need to read it.</p>
+                </div>
+
+                <div class="comment-form fade-in">
+                    <textarea id="commentInput" placeholder="What's on your mind tonight?"></textarea>
+                    <div class="text-center">
+                        <button class="btn btn-primary" id="commentSubmitBtn">💜 Share Anonymously</button>
+                    </div>
+                </div>
+
+                <div class="comments-list" id="commentsList">
+                    <!-- Pre-loaded demo comments -->
+                    <div class="comment-item fade-in">
+                        <div class="comment-author">Anonymous Soul</div>
+                        <p>Some days I just want someone to sit with me in silence and understand that it's enough.</p>
+                    </div>
+                    <div class="comment-item fade-in">
+                        <div class="comment-author">Anonymous Heart</div>
+                        <p>I'm trying. I know it doesn't look like it, but I really am trying.</p>
+                    </div>
+                    <div class="comment-item fade-in">
+                        <div class="comment-author">Anonymous Light</div>
+                        <p>Thank you for this space. For the first time, I don't feel like I need to pretend.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="connect.html">Connect</a>
+            <a href="community.html">Community</a>
+            <a href="blog.html">Blog</a>
+            <a href="resources.html">Resources</a>
+        </div>
+        <p class="footer-glow">Mental Health Matters 💜</p>
+        <p>&copy; 2026 unsaidhours-ly. Built with empathy.</p>
+    </footer>
+
+    <button class="floating-bubble" id="floatingBubble">💜 You are not alone</button>
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle ambient music"
+        title="Toggle ambient music">🎵</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

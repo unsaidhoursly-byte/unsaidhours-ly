@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect — unsaidhours-ly</title>
+    <meta name="description"
+        content="Find someone who understands. Choose your mood, get matched, and chat anonymously." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">unsaid<span>hours</span>-ly</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="connect.html" class="active">Connect</a>
+                <a href="community.html">Community</a>
+                <a href="blog.html">Blog</a>
+                <a href="resources.html">Resources</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+        <h1 class="fade-in">Find someone who understands.</h1>
+        <p class="fade-in">You don't need to explain yourself. Just show up as you are.</p>
+    </section>
+
+    <main>
+
+        <!-- Mood Selector -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>How are you feeling?</h2>
+                    <p>Choose the mood that resonates with you right now.</p>
+                </div>
+
+                <div class="mood-selector fade-in" id="moodSelector">
+                    <button class="mood-btn" data-mood="sad">😢 Sad</button>
+                    <button class="mood-btn" data-mood="anxious">😰 Anxious</button>
+                    <button class="mood-btn" data-mood="lonely">🥺 Lonely</button>
+                    <button class="mood-btn" data-mood="talk">💬 Just Need to Talk</button>
+                </div>
+
+                <div class="text-center fade-in">
+                    <button class="btn btn-yellow" id="matchBtn">✨ Find a Random Match</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat UI Demo -->
+        <section class="section-pad" style="background: rgba(123, 47, 255, 0.03);">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Anonymous Chat</h2>
+                    <p>A peek into what a safe conversation looks like.</p>
+                </div>
+
+                <div class="chat-container fade-in" id="chatContainer">
+                    <div class="chat-header">
+                        <div class="status-dot"></div>
+                        <span>Anonymous Friend</span>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Demo messages will be populated by JS -->
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chatInput" placeholder="Type something kind..." autocomplete="off" />
+                        <button id="chatSendBtn" aria-label="Send message">➤</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suggestion Cards -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Ways to Connect</h2>
+                    <p>More ideas for when you need someone around.</p>
+                </div>
+                <div class="suggestion-cards cards-grid">
+                    <div class="card fade-in">
+                        <span class="card-icon">📝</span>
+                        <h3>Write It Down</h3>
+                        <p>Sometimes journaling what you feel can be the first step. Write it, even if no one reads it.
+                        </p>
+                    </div>
+                    <div class="card fade-in">
+                        <span class="card-icon">🎧</span>
+                        <h3>Listen Together</h3>
+                        <p>Music heals. Share a playlist with your match or listen to calming sounds together in
+                            silence.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <span class="card-icon">🌅</span>
+                        <h3>Morning Check-In</h3>
+                        <p>Start the day with a simple "How are you?" to someone who might need it as much as you do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="connect.html">Connect</a>
+            <a href="community.html">Community</a>
+            <a href="blog.html">Blog</a>
+            <a href="resources.html">Resources</a>
+        </div>
+        <p class="footer-glow">Mental Health Matters 💜</p>
+        <p>&copy; 2026 unsaidhours-ly. Built with empathy.</p>
+    </footer>
+
+    <button class="floating-bubble" id="floatingBubble">💜 You are not alone</button>
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle ambient music"
+        title="Toggle ambient music">🎵</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
